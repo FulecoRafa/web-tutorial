@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulário</title>
+    </head>
+    <body>
+        <a href="index.html" id="top">Home</a>
+        <h1>Formulário</h1>
+        <h2>Atenção: Esta página requer conhecimentos das outras páginas. Recomenda-se que veja as outras antes de progredir nesta página.</h2>
+        <br><br><br>
+        <p>Formulário é uma série de campos onde preenchemos dados que vão ajudar o usuário a interagir com nosso site.</p>
+        <p>Para criar esses campos, vamos usar a tag 'form' e dentro dela, os itens com a tag 'input'</p>
+        <p>Cada input pode ser de um tipo, definido na propriedade 'type'. No formulário abaixo, inspecione os elementos e veja quais os tipos usados.</p>
+        <p>Cada input tem também um 'name', que funciona de forma similar ao 'id'. Por fim, cada input tem um 'value', que é exatamente o que está escrito dentro da caixinha</p>
+        <p>ou a opção selecionada. Vamos brincar um pouco com isso:</p>
+        <hr>
+        <form id="form">
+            Nome:
+            <input type="text" name="name"><br>
+            Qual animal você mais gosta?<br>
+            <input type="radio" name="bicho" value="cachorro">Cachorro<br>
+            <input type="radio" name="bicho" value="gato">Gato<br>
+            <input type="radio" name="bicho" value="peixe">Peixe<br>
+            <input type="radio" name="bicho" value="hamster">Hamster<br>
+            Quantos desse animal você tem?<br>
+            <input type="number" name="quantity" min=0 max=10>
+        </form>
+        <button id="submitButton">Submit</button>
+        <hr>
+        <p id="text"></p>
+        <hr>
+        <a href="form.js" target="_blank">Veja aqui o arquivo JavaScript para este site.</a><br>
+        <a href="https://www.w3schools.com/tags/att_input_type.asp">Clique aqui para mais tipos de input de formulário</a><br>
+        <a href="#top">Voltar para o topo</a>
+    </body>
+    <script src="form.js"></script>
+</html>
