@@ -1,0 +1,1 @@
+1- Make links to inspection apear in a pop-up.
