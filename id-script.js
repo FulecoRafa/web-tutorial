@@ -5,7 +5,7 @@ let textBox = document.getElementById("teste");//Procura o elemento de id 'teste
 //Essa função define o que vai acontecer quando clicarmos no botão
 function onClick (){
     console.log("clickety clack!");//apenas para checar no console dse funciona
-    textBox.innerHTML = "Parabéns! Você mudou o html a partir de JavaScript!!";//element.innerHTML se refere ao interior desse elemento. Nessa função, vamos trocar o interior por um texto
+    textBox.innerHTML = "<a href=\"id.html\">Parabéns! Você mudou o html a partir de JavaScript!!</a>";//element.innerHTML se refere ao interior desse elemento. Nessa função, vamos trocar o interior por um texto
 }
 
 //Isto se chama event listener. Ele fica de olho no elemento e quando ocorre alguma coisa (neste caso, um click no botão), ele executa a função 'onClick'
