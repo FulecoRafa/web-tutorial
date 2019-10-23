@@ -8,6 +8,19 @@
             a + a{
                 margin-inline: 30px;
             }
+            div#topics{
+                display: flex;
+                align-content: flex-start;
+                align-items: center;
+            }
+
+            ul{
+                border-style: solid;
+                padding-right: 10px;
+            }
+            #exer{
+                padding: 20px;
+            }
         </style>
         <meta charset="utf-8">
         <title>Tutorial de HTML e JavaScript</title>
@@ -16,13 +29,21 @@
         <h1>Bem vindo ao tutorial de HTML e JavaScript!</h1>
         <h2>Existe uma série de documentações relacionadas em como fazer determinadas coisas. Basta clicar nos links abaixo para ir para cada um deles.</h2>
         <p>Por favor, fique a vontade para inspecionar os elementos do site. Eles foram feitos da maneira mais simples para que fossem fáceis de entender.</p>
-        <a href="links.html">Links</a>
-        <a href="images.html">Imagens</a>
-        <a href="videos.html">Vídeos</a>
-        <a href="id.html">IDs e JavaScript</a>
-        <a href="buttons.html">Botões</a>
-        <a href="form.html">Formulários</a>
-        <a href="exercises.html">Exercícios</a>
+        <div id="topics">
+            <ul>
+                <h2><b>HTML:</b></h2>
+                <li><a href="links.html">Links</a></li>
+                <li><a href="images.html">Imagens</a></li>
+                <li><a href="videos.html">Vídeos</a></li>
+            </ul>
+            <ul>
+                <h2><b>HTML + JavaScript:</b></h2>
+                <li><a href="id.html">IDs e JavaScript</a></li>
+                <li><a href="buttons.html">Botões</a></li>
+                <li><a href="form.html">Formulários</a></li>
+            </ul>
+            <a href="exercises.html" id="exer">Exercícios</a>
+        </div>
         <hr>
         <h2><font color="red">Hacker Area!</font></h2>
         <p>Todas as páginas tem esta área. Aqui você pode ver truques mais avançados.</p>
