@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tabelas</title>
+    </head>
+    <body>
+        <a href="index.html" id="top">Home</a>
+        <h1>Tabelas</h1>
+        <p>Tabelas são uma forma muito eficaz de arrumar informações. E são muito fáceis de fazer em HTML! basta usar a tag 'table' (tabela em inglês) e depois colocar os itens nos lugares certos.</p>
+        <p>Aqui vocês também vão precisar de um pouco de CSS. Vamos precisar dele para colocar bordas na tabela. <a href="./inspect.html">Inspecione</a> a tag logo depois deste parágrafo.</p>
+        <style>
+            table, th, td{
+                border: 1px solid black;/*Coloca borda na tabela*/
+                text-align: center;/*Centraliza o texto*/
+            }
+        </style>
+        <p>Para colocar as informações nos lugares certos, você vai precisar de algumas tags para colocar dentro da tag 'table':</p>
+        <ul>
+            <li>'tr': (<b>T</b>able <b>R</b>ow) Indica uma linha da tabela. É a primeira coisa a se botar dentro da tabela e depois colocam-se os itens dentro de cada linha da tabela.</li>
+            <li>'td': (<b>T</b>able <b>D</b>ata) Indica um item da tabela. Eles são colocados dentro de 'tr' e cada um indica unma coluna.</li>
+            <li>'th': (<b>T</b>able <b>H</b>eader) Indica um título para um coluna ou uma linha, dependendo de onde for colocado.</li>
+            <li>'caption': Coloca um título/descrição no topo da sua tabela.</li>
+        </ul>
+        <p><a href="./inspect.html">Inspecione</a> os seguintes exeplos para entender melhor como funcionam as tabelas:</p>
+        <br><hr><br>
+        <table>
+            <caption>Tabela com headers para cada coluna</caption>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Sexo</th>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>15</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>Mário</td>
+                <td>16</td>
+                <td>M</td>
+            </tr>
+            <tr>
+                <td>Jubileu</td>
+                <td>16</td>
+                <td>M</td>
+            </tr>
+            <tr>
+                <td>Samantha</td>
+                <td>16</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>Joãozinho</td>
+                <td>14</td>
+                <td>M</td>
+            </tr>
+        </table>
+        <br><hr><br>
+        <table>
+            <caption>Tabela com hearders para cada linha</caption>
+            <tr>
+                <th>Nomes</th>
+                <td>Ana</td>
+                <td>Joãozinho</td>
+                <td>Jubileu</td>
+                <td>Mário</td>
+                <td>Samantha</td>
+            </tr>
+            <tr>
+                <th>Idades</th>
+                <td>15</td>
+                <td>14</td>
+                <td>16</td>
+                <td>16</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <th>Sexos</th>
+                <td>F</td>
+                <td>M</td>
+                <td>M</td>
+                <td>M</td>
+                <td>F</td>
+            </tr>
+        </table>
+        <br><hr><br>
+        <h2><font color="red">Hacker Area!</font></h2>
+        <p>Você pode também mesclar colunas e linhas. Para isso, use as propriedades 'colspan' e 'rowspan', respectivamente</p>
+        <p><a href="./inspect.html">Inspecione</a> o seguintes exemplos para poder ver como se faz isso:</p>
+        <br><hr><br>
+        <table>
+            <caption>Colspan</caption>
+            <tr>
+                <th>Nome</th>
+                <th colspan="3">Notas</th>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>10</td>
+                <td>9.5</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Joãozinho</td>
+                <td>4</td>
+                <td>3</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Joana</td>
+                <td>7</td>
+                <td>7</td>
+                <td>7</td>
+            </tr>
+        </table>
+        <br><hr><br>
+        <table>
+            <caption>Rowspan</caption>
+            <tr>
+                <th>Nome</th>
+                <td>Ana</td>
+                <td>Joãozinho</td>
+                <td>Joana</td>
+            </tr>
+            <tr>
+                <th rowspan="3">Notas</th>
+                <td>10</td>
+                <td>4</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>9.5</td>
+                <td>3</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>2</td>
+                <td>7</td>
+            </tr>
+        </table>
+        <br><hr><br>
+        <a href="#top">Voltar ao topo</a>
+    </body>
+</html>
